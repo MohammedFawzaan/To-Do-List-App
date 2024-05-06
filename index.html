@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="icon" href="/TodoforLearning/assets/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todoapp">
+            <h2>To-Do List <img src="/TodoforLearning/assets/icon.png" alt="icon image"></h2>
+            <div class="row">
+                <input type="text" id="inputbox" placeholder="Add Your Task">
+                <button onclick="addtask(event)">Add</button>
+            </div>
+            <ul id="listcontainer">
+                <!-- class name is checked for all list items -->
+            </ul>
+        </div>
+    </div>
+    <script src="app.js" ></script>
+</body>
+</html>
