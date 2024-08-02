@@ -5,19 +5,54 @@
     box-sizing: border-box;
 }
 
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: azure;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-headings {
+    display: flex;
+    align-items: center;
+    color: #0954cb;
+    gap: 20px;
+}
+
+.nav-headings a {
+    text-decoration: none;
+    font-size: x-large;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.nav-headings a:hover {
+    background-color: #4bb4f6;
+    border-radius: 4px;
+}
+
 .container {
     width: 100%;
     min-height: 100vh;
-    /* background: linear-gradient(135deg, #153677, #4e085f); */
     padding: 10px;
 }
 
 .todoapp {
     width: 100%;
     max-width: 540px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
     background: white;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 40px 30px 30px;
     border-radius: 10px;
     background-color: rgb(165, 207, 243);
 }
@@ -72,6 +107,7 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
+    margin: 2.5rem;
 }
 
 ul li::before {
@@ -79,7 +115,7 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(/TodoforLearning/assets/unchecked.png);
+    background-image: url(/assets/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 8px;
@@ -93,7 +129,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    background-image: url(/TodoforLearning/assets/checked.png);
+    background-image: url(/assets/checked.png);
 }
 
 ul li span {
@@ -111,3 +147,55 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+
+.btn-1 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#DarkBackground {
+    background-color: #333;
+    color: #fff;
+}
+
+#DarkBackground:hover {
+    background-color: #555;
+}
+
+#LightBackground {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+#LightBackground:hover {
+    background-color: #f1f1f1;
+}
+
+.light-bg {
+    background: darkblue;
+}
+
+.dark-bg {
+    background: linear-gradient(135deg, #3a74e8, #c114ec);
+}
+
+#light {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #light:hover {
+    background: linear-gradient(to right, #00f2fe, #4facfe);
+  }

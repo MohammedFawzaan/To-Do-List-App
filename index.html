@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-    <link rel="icon" href="/TodoforLearning/assets/icon.png">
+    <link rel="icon" href="/assets/icon.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-WX3dFTzFw6MjNYvpc6fpNzImikH4G4NZm+Gv6E2ZR5C6e1imnh5Ez4hjj7I1D7Id" crossorigin="anonymous">
 </head>
+
 <body>
+    <div class="nav-bar" >
+        <div class="nav-headings" >
+            <h1>To-Do List</h1>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </div>
+        <div class="buttons">
+            <button id="light">Change Background</button>
+        </div>   
+    </div>
+
     <div class="container">
         <div class="todoapp">
-            <h2>To-Do List <img src="/TodoforLearning/assets/icon.png" alt="icon image"></h2>
+            <h2>Your Tasks <img src="/assets/images.png" alt="icon image"></h2>
             <div class="row">
-                <input type="text" id="inputbox" placeholder="Add Your Task">
-                <button onclick="addtask(event)">Add</button>
+                <input type="text" id="inputbox" placeholder="Add Your Task" required>
+                <button class="btn" onclick="addtask(event)">Add</button>
             </div>
             <ul id="listcontainer">
                 <!-- class name is checked for all list items -->
             </ul>
         </div>
     </div>
-    <script src="app.js" ></script>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
